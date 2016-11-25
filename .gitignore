@@ -26,7 +26,7 @@ target/
 # Gradle
 /build/
 /bin/
-/src/main/resources/js/bower_components/
+/src/main/resources/static/js/bower_components/
 .gradle
 
 .springBeans

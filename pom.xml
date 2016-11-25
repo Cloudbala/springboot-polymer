@@ -72,7 +72,6 @@
                         <argument>install</argument>
                     </arguments>
 
-                    <workingDirectory>${basedir}/src/main/resources/static/js/</workingDirectory>
                 </configuration>
             </plugin>
         </plugins>
