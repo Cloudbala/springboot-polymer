@@ -18,6 +18,6 @@
     "polymer": "Polymer/polymer",
     "iron-elements": "PolymerElements/iron-elements",
     "paper-elements": "PolymerElements/paper-elements",
-    "paper-input": "PolymerElements/paper-input#"
+    "polymer-themes": "PolymerThemes/polymer-themes"
   }
 }

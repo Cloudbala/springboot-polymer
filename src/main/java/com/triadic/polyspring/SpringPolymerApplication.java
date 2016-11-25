@@ -1,4 +1,4 @@
-package com.pivotal.fe.demo.polymer1;
+package com.triadic.polyspring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

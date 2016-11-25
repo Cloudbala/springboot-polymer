@@ -1,4 +1,4 @@
-package com.pivotal.fe.demo.polymer1;
+package com.triadic.polyspring;
 
 import java.util.Collections;
 import java.util.Map;
