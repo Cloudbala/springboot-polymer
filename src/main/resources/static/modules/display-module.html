@@ -1,0 +1,55 @@
+<link rel="import" href="/js/bower_components/polymer/polymer.html">
+<link rel="import" href="/js/bower_components/iron-ajax/iron-ajax.html">
+<link rel="import" href="/js/bower_components/paper-input/paper-input.html">
+<link rel="import" href="/js/bower_components/paper-button/paper-button.html">
+
+
+<dom-module id="display-module">
+    <link rel="import" href="/js/themes/seven-seas/seven-seas.css" type="css">
+
+    <style>
+        div.bubble {
+            margin: 20px;
+            padding: 20px 20px;
+            border-radius: 20px;
+            background-color: #f1f1f1;
+        }
+
+    </style>
+
+    <template>
+        <iron-ajax auto
+                   id="dataService"
+                   url="/random"
+                   on-response="updateData"
+                   handle-as="json"
+        >
+
+        </iron-ajax>
+        <div class="bubble">
+            <paper-input label="text input"></paper-input>
+            Token: <span>[[mydata.id]]</span><br>
+            <paper-button raised on-click="getData">Get That Data</paper-button>
+        </div>
+    </template>
+
+    <script>
+        Polymer({
+            is: "display-module",
+
+            properties: {
+                mydata: {
+                    type: Object,
+                    value: {"id": "argle flargle"}
+                }
+            },
+            getData: function () {
+                this.$.dataService.generateRequest();
+            },
+            updateData: function (theResponse) {
+                this.mydata = theResponse.detail.response;
+            }
+        });
+    </script>
+
+</dom-module>

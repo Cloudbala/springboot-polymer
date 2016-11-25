@@ -1,0 +1,23 @@
+{
+  "name": "spring-polymer1-simple",
+  "version": "0.0.0",
+  "homepage": "https://github.com/psramkumar",
+  "authors": [
+    "psramkumar@gmail.com"
+  ],
+  "description": "Simple project to test Polymer",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer",
+    "iron-elements": "PolymerElements/iron-elements",
+    "paper-elements": "PolymerElements/paper-elements",
+    "paper-input": "PolymerElements/paper-input#"
+  }
+}
